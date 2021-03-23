@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "dockerfilePath" :"./docker/Dockerfile"
+  "dockerfileLines": [
+    "RUN chmod +x docker/entrypoints/rails.sh",
+    "ENTRYPOINT [\"docker/entrypoints/rails.sh\"]",
+    "CMD bundle exec rake db:chatwoot_prepare; bundle exec rails s -b 0.0.0.0 -p 3000"
+  ]
+}
