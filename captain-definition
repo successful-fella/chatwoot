@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "dockerfilePath" :"./docker/Dockerfile"
+  "dockerfilePath" :"./docker/Dockerfile",
   "dockerfileLines": [
     "RUN chmod +x docker/entrypoints/rails.sh",
     "ENTRYPOINT [\"docker/entrypoints/rails.sh\"]",
